@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Ｖａｐｏｒ　Ｓｔｏｒｅ　圧グュ</title>
+
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,700;1,400;1,700&display=swap">
+
+  <link rel="stylesheet" href="./public/css/globals.css">
+  <link rel="stylesheet" href="./public/css/home.css">
+
+  <link rel="icon" href="./public/images/favicon.png" type="image/png">
+
+  
+</head>
+
+<body>
+  <audio id="loungeMusicPlayer"  style="display: none;" type="audio/mpeg" preload="auto" muted autoplay loop>
+    <source src="./public/music/homeRessonance.mp3" style="width: 50%" type="audio/mpeg">
+    Seu navegador não suporta essa funcionalidade.
+  </audio>
+
+  <header>
+    <img src="./public/images/logo.png" alt="Logo da Vapor Store">
+
+    <h1>Ｖａｐｏｒ　Ｓｔｏｒｅ　圧グュ</h1>
+  </header>
+
+  <main>
+    <div class="conceptExplanation">
+      <video width="640" height="480" src="./public/videos/indexVideoAnime.mp4" autoplay muted loop>
+        Seu navegador não suporta essa funcionalidade.
+      </video>
+
+      <div class="conceptText">
+        <p> 
+          A Vapor Store é uma loja baseada na estética Vapor.
+
+          <br>
+          <br>
+          
+          Essa estética surgiu em meados de 2010 entre algumas comunidades na internet. 
+          Seu conceito é caracterizado por uma fascinação nostálgica pela estética dos anos 80 e 90, 
+          abrangendo referências a diversos aspectos culturais produzidos à época. Tais como a tecnologia da época, 
+          jogos eletrônicos, cultura nipônica, esculturas neoclássicas, pós-modernismo, 
+          músicias comerciais e à estética cyberpunk.
+          
+          <br>
+          <br>
+          
+          <a href="./views/productList.html">Clique aqui para conferir nossos produtos!</a>
+        </p>
+      </div>
+    </div>
+  </main>
+  
+  <footer>
+    <h2>Ｍａｄｅ　ｗｉｔｈ ❤️ ｂｙ　Ｖａｐｏｒ　Ｃｏｍｐａｎｙ　若委ねき沿</h2>
+  </footer>
+
+  <script>
+    const loungeMusic = document.getElementById("loungeMusicPlayer");
+
+    loungeMusic.volume = 0.05;
+    loungeMusic.muted = false;
+  </script>
+</body>
+</html>
