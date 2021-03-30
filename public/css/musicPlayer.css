@@ -1,15 +1,15 @@
 #radio_container {
   position: absolute;
-  top: 70px;
+  top: 62px;
   right: 175px;
   z-index: 10;
 
   padding: 15px;
 
-  border: 1px solid grey;
+  border: 5px solid #01cdfe;
   border-radius: 10px;
 
-  background-color: rgba(128, 128, 128, 0.5);
+  background-color: rgba(255, 113, 206, 0.4);
 
   text-align: center;
 
@@ -28,22 +28,26 @@
   cursor: pointer;
 }
 
-#radio_song-name {
+#radio_song-title {
   color: black;
-  font-size: 20px;
+  font-size: 16px;
+  font-style: italic;
 
-  margin-bottom: 20px;
+  margin-bottom: 3px;
 }
 
 #radio_artist-name {
   color: black;
-  font-size: 20px;
+  font-weight: normal;
+  font-size: 15px;
 
   margin-bottom: 20px;
 }
 
 #radio_track-thumbnail {
   height: 150px;
+
+  border-radius: 15px;
 
   margin-bottom: 10px;
 }
@@ -55,11 +59,6 @@
 #radio_song-title {
   font-weight: bold;
   font-size: 30px;
-}
-
-#radio_artist-name {
-  font-weight: normal;
-  font-size: 15px;
 }
 
 #radio_buttons-container {
