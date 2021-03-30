@@ -13,6 +13,7 @@
 
     <link rel="stylesheet" href="../public/css/globals.css">
     <link rel="stylesheet" href="../public/css/productView.css">
+    <link rel="stylesheet" href="../public/css/musicPlayer.css">
   
     <link rel="icon" href="../public/images/favicon.png" type="image/png">
   </head>
@@ -21,7 +22,7 @@
     <a href="../index.html"><img src="../public/images/logo.png" alt="Logo da Vapor Store"></a>
 
     <div class="headerButtons">      
-      <span title="Rádio Vapor Store" class="material-icons">
+      <span title="Rádio Vapor Store" class="material-icons" onclick="showPlayer()">
         headset
       </span>
 
@@ -83,5 +84,33 @@
   <footer>
     <h2>Ｍａｄｅ　ｗｉｔｈ ❤️ ｂｙ　Ｖａｐｏｒ　Ｃｏｍｐａｎｙ　若委ねき沿</h2>
   </footer>
+
+  <div class="disabled" id="radio_container">
+    <span id="close_radio-button" class="material-icons" onclick="closePlayer()">
+      close
+    </span>
+
+    <div id="radio_song-info-container">
+      <img src="" alt="" id="radio_track-thumbnail">
+
+      <div class="radio_song-information">
+        <p id="radio_song-title">No Current Track...</p>
+        <p id="radio_artist-name">...</p>
+      </div>
+    </div>
+
+    <audio id="radio_player"  type="audio/mpeg" preload="auto" controls ></audio>
+
+    <div id="radio_buttons-container">
+      <a id="previous-track_button" onclick="previousSong()">
+        <img src="../public/icons/2x/rewind.png" alt="Botão de Faixa Anterior">
+      </a>
+      <a id="next-track_button" onclick="nextSong()">
+        <img src="../public/icons/2x/next.png" alt="Botão de Próxima Faixa">
+      </a>
+    </div>
+  </div>
+
+  <script src="../public/js/musicPlayer.js"></script>
 </body>
 </html>
