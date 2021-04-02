@@ -6,7 +6,7 @@ var radio_player = document.getElementById('radio_player')
 var music_duration = document.getElementById('radio_player')
 
 // Não vou estourar o ouvido de ninguém:
-radio_player.volume = 0.1
+radio_player.volume = 0.05
 
 let currentPlaying = 0
 
@@ -89,5 +89,3 @@ function nextSong() {
 radio_player.onended = () => {
   nextSong()
 }
-
-

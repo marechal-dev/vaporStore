@@ -12,8 +12,10 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
 
     <link rel="stylesheet" href="../public/css/globals.css">
-    <link rel="stylesheet" href="../public/css/productView.css">
-    <link rel="stylesheet" href="../public/css/musicPlayer.css">
+    <link rel="stylesheet" href="../public/css/product_view.css">
+    <link rel="stylesheet" href="../public/css/components/music_player.css">
+    <link rel="stylesheet" href="../public/css/components/header_product-view.css">
+    <link rel="stylesheet" href="../public/css/components/footer.css">
   
     <link rel="icon" href="../public/images/favicon.png" type="image/png">
   </head>
@@ -30,9 +32,11 @@
         shopping_cart
       </span>
 
-      <span title="Conta" class="material-icons">
-        account_box  
-      </span>
+      <a id="account_button" href="">
+        <span title="Conta" class="material-icons">
+          account_box  
+        </span>
+      </a>
     </div>
   </header>
 
@@ -54,7 +58,7 @@
 
         <div class="card">
           <div class="card_image-container">
-            <img src="../public/images/productsImages/macintosh.jpg" alt="Imagem do Camiseta Macintosh" class="productImage">
+            <img src="../public/images/productsImages/alien.png" alt="Imagem do Camiseta Macintosh" class="productImage">
           </div>
   
           <div class="cardInfo">
@@ -68,7 +72,7 @@
 
         <div class="card">
           <div class="card_image-container">
-            <img src="../public/images/productsImages/macintosh.jpg" alt="Imagem do Camiseta Macintosh" class="productImage">
+            <img src="../public/images/productsImages/ba-x.png" alt="Imagem do Camiseta Macintosh" class="productImage">
           </div>
   
           <div class="cardInfo">
@@ -79,6 +83,106 @@
             </p>
           </div>
         </div>
+
+        <div class="card">
+          <div class="card_image-container">
+            <img src="../public/images/productsImages/enjoy.png" alt="Imagem do Camiseta Macintosh" class="productImage">
+          </div>
+  
+          <div class="cardInfo">
+            <h4>Produto</h4>
+  
+            <p class="cardInfo_price">
+              R$ 50
+            </p>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="card_image-container">
+            <img src="../public/images/productsImages/Feline.png" alt="Imagem do Camiseta Macintosh" class="productImage">
+          </div>
+  
+          <div class="cardInfo">
+            <h4>Produto</h4>
+  
+            <p class="cardInfo_price">
+              R$ 50
+            </p>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="card_image-container">
+            <img src="../public/images/productsImages/kyoto.png" alt="Imagem do Camiseta Macintosh" class="productImage">
+          </div>
+  
+          <div class="cardInfo">
+            <h4>Produto</h4>
+  
+            <p class="cardInfo_price">
+              R$ 50
+            </p>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="card_image-container">
+            <img src="../public/images/productsImages/motoclub.png" alt="Imagem do Camiseta Macintosh" class="productImage">
+          </div>
+  
+          <div class="cardInfo">
+            <h4>Produto</h4>
+  
+            <p class="cardInfo_price">
+              R$ 50
+            </p>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="card_image-container">
+            <img src="../public/images/productsImages/non.png" alt="Imagem do Camiseta Macintosh" class="productImage">
+          </div>
+  
+          <div class="cardInfo">
+            <h4>Produto</h4>
+  
+            <p class="cardInfo_price">
+              R$ 50
+            </p>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="card_image-container">
+            <img src="../public/images/productsImages/Sega.png" alt="Imagem do Camiseta Macintosh" class="productImage">
+          </div>
+  
+          <div class="cardInfo">
+            <h4>Produto</h4>
+  
+            <p class="cardInfo_price">
+              R$ 50
+            </p>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="card_image-container">
+            <img src="../public/images/productsImages/shiba.png" alt="Imagem do Camiseta Macintosh" class="productImage">
+          </div>
+  
+          <div class="cardInfo">
+            <h4>Produto</h4>
+  
+            <p class="cardInfo_price">
+              R$ 50
+            </p>
+          </div>
+        </div>
+
+        
   </section>
 
   <footer>
@@ -99,7 +203,7 @@
       </div>
     </div>
 
-    <audio id="radio_player"  type="audio/mpeg" preload="auto" controls ></audio>
+    <audio id="radio_player"  type="audio/mpeg" preload="auto" controls autoplay></audio>
 
     <div id="radio_buttons-container">
       <a id="previous-track_button" onclick="previousSong()">
@@ -111,6 +215,8 @@
     </div>
   </div>
 
+  <script src="../public/js/handle_logged_user.js"></script>
   <script src="../public/js/musicPlayer.js"></script>
+  <script async src="../public/js/konami_code.js"></script>
 </body>
 </html>
