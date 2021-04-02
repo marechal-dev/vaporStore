@@ -1,0 +1,33 @@
+header {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  align-items: center;
+  
+  padding: 4px;
+
+  border-bottom: 2px solid black;
+}
+
+header img {
+  height: 100px;
+  margin-left: 10px;
+}
+
+header h1 {
+ text-align: center;
+}
+
+header .header-back_button {
+  display: inline-block;
+  text-align: right;
+  margin-right: 15px;
+}
+
+header .header-back_button span {
+  margin: 0 20px 0;
+  cursor: pointer;
+}
+
+header .header-back_button a {
+  color: black;
+}

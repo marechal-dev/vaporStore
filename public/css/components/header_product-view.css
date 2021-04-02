@@ -1,0 +1,30 @@
+header {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+
+  border-bottom: 2px solid black;
+
+  padding: 4px;
+  margin-bottom: 20px;
+}
+
+header img {
+  height: 100px;
+  margin-left: 10px;
+}
+
+header .headerButtons {
+  display: inline-block;
+  text-align: right;
+  margin-right: 15px;
+}
+
+header .headerButtons span {
+  margin: 0 20px 0;
+  cursor: pointer;
+}
+
+header .headerButtons a {
+  color: black;
+}

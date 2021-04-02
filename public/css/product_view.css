@@ -1,0 +1,21 @@
+:root {
+  --darker-blue: #00b8ff;
+  --vapor-purple: #ff00c1;
+}
+
+/* CSS dos cards aqui */
+.products {
+  max-width: 800px;
+  margin: 0 auto;
+
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+.card { 
+  background-color: rgba(255, 255, 255, 0.5);
+}
+
+.card_image-container img {
+  width: 100%
+}

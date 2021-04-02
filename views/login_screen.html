@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Login</title>
+
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,700;1,400;1,700&display=swap">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+
+  <link rel="stylesheet" href="../public/css/globals.css">
+  <link rel="stylesheet" href="../public/css/login_screen.css">
+  <link rel="stylesheet" href="../public/css/components/form.css">
+
+  <script src="../public/js/login.js"></script>
+
+  <link rel="icon" href="./public/images/favicon.png" type="image/png">
+</head>
+<body>
+  <form>
+    <div id="login-form_inputs">
+      <label for="email_input">Email</label>
+        <input type="email" name="email-input" id="email_input" required>
+      <label for="password_input">Senha</label>
+        <div id="login-form_password-input">
+          <span id="icon" class="material-icons" onclick="showPassword()">
+            visibility
+          </span>
+          <input type="password" name="password-input" id="password_input" required>
+        </div>
+    </div>
+
+    <div id="login-form_buttons">
+      <a onclick="handle_login()" href="./productList.html">Entrar</a>
+      <a href="./productList.html">Cancelar</a>
+    </div>
+  </form>
+
+</body>
+</html>

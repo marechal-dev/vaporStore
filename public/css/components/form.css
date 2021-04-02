@@ -1,0 +1,75 @@
+:root {
+  --darker-blue: #00b8ff;
+  --vapor-purple: #ff00c1;
+}
+
+form {
+  text-align: center;
+
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  border: 5px solid var(--vapor-purple);
+  border-radius: 10px;
+
+  padding: 30px;
+}
+
+form #login-form_inputs {
+  display: grid;
+  grid-template-columns: 1fr;
+
+  margin-bottom: 20px;
+}
+
+#login-form_inputs label {
+ text-align: left;
+ margin-bottom: 3px;
+}
+
+#login-form_inputs label:nth-last-child(2) {
+  margin-top: 8px;
+}
+
+#login-form_inputs input {
+  border: 1px solid var(--darker-blue);
+  border-radius: 5px;
+
+  background: none;
+  
+  padding: 6px 0px 6px 10px;
+}
+
+#login-form_inputs input:focus {
+  outline: none;
+}
+
+#login-form_buttons a{
+  padding: 5px;
+  margin-left: 10px;
+
+  font-style: italic;
+  font-weight: bold;
+
+  border: 3px solid #05ffa1;
+  border-radius: 10px;
+
+  background: none;
+}
+
+#login-form_password-input {
+  display: flex;
+  width: 100%;
+}
+
+#icon {
+  padding: 5px;
+  background: var(--darker-blue);
+  text-align: center;
+  min-width: 20px;
+  border-radius: 3px solid var(--darker-blue);
+
+  cursor: pointer;
+}

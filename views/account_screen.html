@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Ｖａｐｏｒ　Ｓｔｏｒｅ　圧グュ</title>
+
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,700;1,400;1,700&display=swap">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+
+  <link rel="stylesheet" href="../public/css/globals.css">
+  <link rel="stylesheet" href="../public/css/account_screen.css">
+
+  <link rel="stylesheet" href="../public/css/components/header_account-view.css">
+  <link rel="stylesheet" href="../public/css/components/footer.css">
+  <link rel="stylesheet" href="../public/css/components/form.css">
+
+
+  <link rel="icon" href="../public/images/favicon.png" type="image/png">
+</head>
+<body>
+  <header>
+    <a href="../index.html"><img src="../public/images/logo.png" alt="Logo da Vapor Store"></a>
+
+    <h1 id="user_greeting"></h1>
+
+    <div class="header-back_button">      
+      <a href="./productList.html">
+        <span title="Retornar" class="material-icons">
+          arrow_back
+        </span>
+      </a>
+    </div>
+  </header>
+
+  <section id="user_info-panel">
+    <form>
+      <div id="login-form_inputs">
+        <label for="name_input">Nome</label>
+          <input type="text" name="name-input" id="name_input" value="">
+        <label for="email_input">Email</label>
+          <input type="email" name="email-input" id="email_input" value="">
+        <label for="password_input">Senha</label>
+          <div id="login-form_password-input">
+            <span id="icon" class="material-icons" onclick="showPassword()">
+              visibility
+            </span>
+            <input type="password" name="password-input" id="password_input" value="">
+          </div>
+        <label for="address_input">Endereço</label>
+          <input type="text" name="address-input" id="address_input" value="" required>
+        <label for="tel_input">Telefone/Celular</label>
+          <input type="tel" name="tel-input" id="tel_input" pattern="[0-9]{2}-[0-9]{5}-[0-9]{4}">
+      </div>
+  
+      <div id="user-info_form_buttons">
+        <a href="./account_screen.html" id="update-user_button" onclick="handle_user_update()">Atualizar Informações</a>
+      </div>
+    </form>
+  </section>
+
+  <footer>
+    <h2>Ｍａｄｅ　ｗｉｔｈ ❤️ ｂｙ　Ｖａｐｏｒ　Ｃｏｍｐａｎｙ　若委ねき沿</h2>
+  </footer>
+
+  <script src="../public/js/retrieve_update_user_data.js"></script>
+  <script src="../public/js/show_hide_password.js"></script>
+</body>
+</html>

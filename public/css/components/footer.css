@@ -1,0 +1,15 @@
+footer {
+  text-align: center;
+  max-height: 100px;
+  width: 100%;
+
+  border-top: 2px solid black;
+
+  position: absolute;
+  bottom: 0;
+}
+
+footer h2 {
+  font-size: 15px;
+  padding: 20px;
+}

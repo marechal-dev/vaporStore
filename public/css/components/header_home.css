@@ -1,0 +1,18 @@
+header {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  
+  padding: 4px;
+
+  border-bottom: 2px solid black;
+}
+
+header img {
+  height: 100px;
+  margin-left: 10px;
+}
+
+header h1 {
+ text-align: right;
+}
