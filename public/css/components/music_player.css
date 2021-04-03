@@ -1,5 +1,5 @@
 #radio_container {
-  position: absolute;
+  position: fixed;
   top: 65px;
   right: 175px;
   z-index: 10;
@@ -9,7 +9,7 @@
   border: 5px solid #01cdfe;
   border-radius: 10px;
 
-  background-color: rgba(255, 113, 206, 0.4);
+  background-color: rgba(255, 113, 206, 1);
 
   text-align: center;
 

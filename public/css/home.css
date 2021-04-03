@@ -16,8 +16,8 @@ main {
 }
 
 .conceptExplanation video {
-  height: auto;
-  width: 100%;
+  width: 100% !important;
+  height: auto !important;
   align-items: stretch;
   border-radius: 10px;
 }

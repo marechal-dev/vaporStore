@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Camiseta Alien</title>
+
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,700;1,400;1,700&display=swap">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+
+  <link rel="stylesheet" href="../public/css/globals.css">
+  <link rel="stylesheet" href="../public/css/product_screen.css">
+
+  <link rel="stylesheet" href="../public/css/components/music_player.css">
+  <link rel="stylesheet" href="../public/css/components/header_product-view.css">
+  <link rel="stylesheet" href="../public/css/components/footer.css">
+
+  <link rel="icon" href="../public/images/favicon.png" type="image/png">
+</head>
+<body>
+  <header>
+    <a href="../index.html"><img src="../public/images/logo.png" alt="Logo da Vapor Store"></a>
+    
+    <div class="headerButtons">      
+      <span title="Rádio Vapor Store" class="material-icons" onclick="showPlayer()">
+        headset
+      </span>
+
+      <span title="Carrinho de compras" class="material-icons">
+        shopping_cart
+      </span>
+
+      <a id="account_button" href="">
+        <span title="Conta" class="material-icons">
+          account_box  
+        </span>
+      </a>
+    </div>
+  </header>
+
+  <section class="product_view">
+    <img src="../public/images/productsImages/alien.png" alt="Camiseta Alien">
+    
+    <div class="product_info">
+      <h1 id="product_name">Camiseta Alien</h1>
+      <p id="product_code">Código: <span>1</span></p>
+
+      <h2 id="product_price">R$50,00</h2>
+
+      <select name="color" id="color_select" required>
+        <option selected>Selecione uma cor</option>
+        <option value="U">Única</option>
+      </select>
+        
+      <select name="size" id="size_select" required>
+        <option selected>Selecione um tamanho</option>
+        <option value="P">P</option>
+        <option value="M">M</option>
+        <option value="G">G</option>
+        <option value="GG">GG</option>
+      </select>
+
+      <br>
+
+      <input type="button" value="Comprar com 1-click">
+    </div>
+  </section>
+
+
+  <footer>
+    <h2>Ｍａｄｅ　ｗｉｔｈ ❤️ ｂｙ　Ｖａｐｏｒ　Ｃｏｍｐａｎｙ　若委ねき沿</h2>
+  </footer>
+
+  <div class="disabled" id="radio_container">
+    <span id="close_radio-button" class="material-icons" onclick="closePlayer()">
+      close
+    </span>
+
+    <div id="radio_song-info-container">
+      <img src="" alt="" id="radio_track-thumbnail">
+
+      <div class="radio_song-information">
+        <p id="radio_song-title">No Current Track...</p>
+        <p id="radio_artist-name">...</p>
+      </div>
+    </div>
+
+    <audio id="radio_player" type="audio/mpeg" preload="auto" controls ></audio>
+
+    <div id="radio_buttons-container">
+      <a id="previous-track_button" onclick="previousSong()">
+        <img src="../public/icons/2x/rewind.png" alt="Botão de Faixa Anterior">
+      </a>
+      <a id="next-track_button" onclick="nextSong()">
+        <img src="../public/icons/2x/next.png" alt="Botão de Próxima Faixa">
+      </a>
+    </div>
+  </div>
+  
+  <script src="../public/js/handle_change-product-info.js"></script>
+  <script src="../public/js/handle_logged_user.js"></script>
+  <script src="../public/js/musicPlayer.js"></script>
+</body>
+</html>

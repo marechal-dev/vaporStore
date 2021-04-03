@@ -1,12 +1,29 @@
 header {
+  background-color: #5A30F2;
+
+  text-align: center;
+
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr;
   align-items: center;
 
   border-bottom: 2px solid black;
 
   padding: 4px;
   margin-bottom: 20px;
+
+  position: sticky;
+  top: 0;
+}
+
+header h1 {
+  font-size: 40px;
+  font-style: italic;
+}
+
+header a {
+  height: 100px;
+  width: 100px;
 }
 
 header img {

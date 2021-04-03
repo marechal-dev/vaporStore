@@ -1,0 +1,18 @@
+.product_view {
+  text-align: center;
+}
+
+.product_view {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  align-content: center;
+
+  margin: 0 auto;
+
+  margin-bottom: 50px;
+}
+
+.product_view img {
+  height: 600px;
+}
