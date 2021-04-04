@@ -19,11 +19,6 @@
 </head>
 
 <body>
-  <audio id="loungeMusicPlayer"  style="display: none;" type="audio/mpeg" preload="auto" muted autoplay loop>
-    <source src="./public/music/homeRessonance.mp3" style="width: 50%" type="audio/mpeg">
-    Seu navegador não suporta essa funcionalidade.
-  </audio>
-
   <header>
     <img src="./public/images/logo.png" alt="Logo da Vapor Store">
 
@@ -32,9 +27,7 @@
 
   <main>
     <div class="conceptExplanation">
-      <video src="./public/videos/indexVideoAnime.mp4" autoplay muted loop>
-        Seu navegador não suporta essa funcionalidade.
-      </video>
+      <img src="./public/images/gifs/homeGif.gif" alt="Bem-vindo a Vapor Store">
 
       <div class="conceptText">
         <p> 
@@ -52,7 +45,7 @@
           <br>
           <br>
           
-          <a href="./views/productList.html">Clique aqui para conferir nossos produtos!</a>
+          <a href="./views/product_list.html">Clique aqui para conferir nossos produtos!</a>
         </p>
       </div>
     </div>
@@ -61,12 +54,5 @@
   <footer>
     <h2>Ｍａｄｅ　ｗｉｔｈ ❤️ ｂｙ　Ｖａｐｏｒ　Ｃｏｍｐａｎｙ　若委ねき沿</h2>
   </footer>
-
-  <script>
-    const loungeMusic = document.getElementById("loungeMusicPlayer");
-
-    loungeMusic.muted = false;
-    loungeMusic.volume = 0.05;
-  </script>
 </body>
 </html>

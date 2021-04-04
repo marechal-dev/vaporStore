@@ -15,11 +15,13 @@ main {
   height: 100%;
 }
 
-.conceptExplanation video {
+.conceptExplanation img {
   width: 100% !important;
-  height: auto !important;
+  height: 100% !important;
   align-items: stretch;
-  border-radius: 10px;
+  border-radius: 0px;
+
+  padding: 5px;
 }
 
 .conceptExplanation p,
