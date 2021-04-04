@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+    <title>Ｖａｐｏｒ　Ｓｔｏｒｅ　圧グュ</title>
+  
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,700;1,400;1,700&display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+
+    <link rel="stylesheet" href="../public/css/globals.css">
+    <link rel="stylesheet" href="../public/css/product_view.css">
+    <link rel="stylesheet" href="../public/css/components/music_player.css">
+    <link rel="stylesheet" href="../public/css/components/header_product-view.css">
+    <link rel="stylesheet" href="../public/css/components/footer.css">
+  
+    <link rel="icon" href="../public/images/favicon.png" type="image/png">
+  </head>
+<body>
+  <header>
+    <a href="../index.html"><img src="../public/images/logo.png" alt="Logo da Vapor Store"></a>
+
+    <h1>Produtos</h1>
+
+    <div class="headerButtons">      
+      <span title="Rádio Vapor Store" class="material-icons" onclick="showPlayer()">
+        headset
+      </span>
+
+      <span title="Carrinho de compras" class="material-icons">
+        shopping_cart
+      </span>
+
+      <a id="account_button" href="">
+        <span title="Conta" class="material-icons">
+          account_box  
+        </span>
+      </a>
+    </div>
+  </header>
+
+  <section id="products" class="products">
+    <table>
+      <tr>
+        <th class="product_image" id="product_image-feline">
+          <img src="../public/images/productsImages/Feline.png" alt="Camiseta Feline" title="Camiseta Feline, Tamanho GG, R$50,00">
+        </th>
+        <th class="product_image" id="product_image-bax">
+          <img src="../public/images/productsImages/ba-x.png" alt="Camiseta Ba-X" title="Camiseta Ba-X, Tamanho M, R$50,00">
+        </th>
+        <th class="product_image" id="product_image-enjoy">
+          <img src="../public/images/productsImages/enjoy.png" alt="Camiseta Enjoy" title="Camiseta Enjoy, Tamanho G, R$50,00">
+        </th>
+      </tr>
+      <tr>
+        <td class="product_info" id="product_info-feline">
+          Camiseta Feline
+        </td>
+        <td class="product_info" id="product_info-bax">
+          Camiseta Ba-X
+        </td>
+        <td class="product_info" id="product_info-enjoy">
+          Camiseta Enjoy
+        </td>
+      </tr>
+
+      <tr>
+        <th id="product_image" id="product_image-shiba">
+          <img src="../public/images/productsImages/shiba.png" alt="Camiseta Shiba" title="Camiseta Shiba, Tamanho GG, R$50,00">
+        </th>
+        <th class="product_image" id="product_image-kyoto">
+          <img src="../public/images/productsImages/kyoto.png" alt="Moletom Kyoto" title="Moletom Kyoto, Tamanho P, R$50,00">
+        </th>
+        <th class="product_image" id="product_image-macintosh">
+          <img src="../public/images/productsImages/macintosh.jpg" alt="Camiseta Macintosh Plus" title="Camiseta Macintosh Plus, Tamanho M, R$50,00">
+        </th>
+      </tr>
+
+      <tr>
+        <td id="product_info" id="product_info-shiba">
+          Camiseta Shiba
+        </td>
+        <td class="product_info" id="product_info-kyoto">
+          Moletom Kyoto
+        </td>
+        <td class="product_info" id="product_info-macintosh">
+          Camiseta Macintosh Plus
+        </td>
+      </tr>
+
+      <tr>
+        <th id="product_image" id="product_image-fuji">
+          <img src="../public/images/productsImages/mount_fuji.png" alt="Camiseta Mount Fuji" title="Camiseta Mount Fuji, Tamanho M, R$50,00">
+        </th>
+        <th class="product_image" id="product_image-non">
+          <img src="../public/images/productsImages/non.png" alt="Moletom Non" title="Moletom Non, Tamanho M, R$60,00">
+        </th>
+        <th class="product_image" id="product_image-sega">
+          <img src="../public/images/productsImages/Sega.png" alt="Camiseta Sega" title="Camiseta Sega, Tamanho G, R$50,00">
+        </th>
+      </tr>
+
+      <tr>
+        <td id="product_info" id="product_info-fuji">
+          Camiseta Mount Fuji
+        </td>
+        <td class="product_info" id="product_info-non">
+          Moletom Non
+        </td>
+        <td class="product_info" id="product_info-sega">
+          Camiseta Sega
+        </td>
+      </tr>
+
+      <tr>
+        <th id="product_image" id="product_image-twilight">
+          <img src="../public/images/productsImages/twilight.png" alt="Camiseta Twilight" title="Camiseta Twilight, Tamanho P, R$50,00">
+        </th>
+      </tr>
+
+      <tr>
+        <td id="product_info" id="product_info-twilight">
+          Camiseta Twilight
+        </td> 
+      </tr>
+    </table>
+        
+  </section>
+
+  <footer>
+    <h2>Ｍａｄｅ　ｗｉｔｈ ❤️ ｂｙ　Ｖａｐｏｒ　Ｃｏｍｐａｎｙ　若委ねき沿</h2>
+  </footer>
+
+  <div class="disabled" id="radio_container">
+    <span id="close_radio-button" class="material-icons" onclick="closePlayer()">
+      close
+    </span>
+
+    <div id="radio_song-info-container">
+      <img src="" alt="" id="radio_track-thumbnail">
+
+      <div class="radio_song-information">
+        <p id="radio_song-title">No Current Track...</p>
+        <p id="radio_artist-name">...</p>
+      </div>
+    </div>
+
+    <audio id="radio_player" type="audio/mpeg" preload="auto" controls autoplay></audio>
+
+    <div id="radio_buttons-container">
+      <a id="previous-track_button" onclick="previousSong()">
+        <img src="../public/icons/rewind.png" alt="Botão de Faixa Anterior">
+      </a>
+      <a id="next-track_button" onclick="nextSong()">
+        <img src="../public/icons/next.png" alt="Botão de Próxima Faixa">
+      </a>
+    </div>
+  </div>
+
+  <script src="../public/js/handle_change-product-info.js"></script>
+  <script src="../public/js/handle_logged_user.js"></script>
+  <script src="../public/js/musicPlayer.js"></script>
+  <script async src="../public/js/konami_code.js"></script>
+</body>
+</html>
