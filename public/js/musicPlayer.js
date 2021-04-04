@@ -23,31 +23,31 @@ const data = [
     title: "Soda City Funk",
     artist: "람다람",
     thumbnail: '../../public/images/musics_thumbnails/sodaCityFunk.png',
-    song_file: '../../public/music/radio_musics/sodaCityFunk.mp3'
+    song_file: '../../public/music/sodaCityFunk.mp3'
   },
   {
     title: "Thank You!",
     artist: "Home Made Kazoku",
     thumbnail: '../../public/images/musics_thumbnails/thankYou.png',
-    song_file: '../../public/music/radio_musics/thankYou.mp3'
+    song_file: '../../public/music/thankYou.mp3'
   },
   {
     title: "Great Days",
     artist: "Karen Aoki",
     thumbnail: '../../public/images/musics_thumbnails/greatDays.png',
-    song_file: '../../public/music/radio_musics/greatDays.mp3'
+    song_file: '../../public/music/greatDays.mp3'
   },
   {
     title: "Friday Night",
     artist: "Kensuke Inage",
     thumbnail: '../../public/images/musics_thumbnails/yakuza0bSide.png',
-    song_file: '../../public/music/radio_musics/fridayNight.mp3'
+    song_file: '../../public/music/fridayNight.mp3'
   },
   {
     title: "24 Hour Cinderella",
     artist: "Goro Majima",
     thumbnail: '../../public/images/musics_thumbnails/yakuza0bSide.png',
-    song_file: '../../public/music/radio_musics/twentyFourHourCinderella.mp3'
+    song_file: '../../public/music/twentyFourHourCinderella.mp3'
   }
 ]
 
