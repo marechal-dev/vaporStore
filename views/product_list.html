@@ -13,7 +13,10 @@
 
     <link rel="stylesheet" href="../public/css/globals.css">
     <link rel="stylesheet" href="../public/css/product_view.css">
+
     <link rel="stylesheet" href="../public/css/components/music_player.css">
+    <link rel="stylesheet" href="../public/css/components/cart.css">
+
     <link rel="stylesheet" href="../public/css/components/header_product-view.css">
     <link rel="stylesheet" href="../public/css/components/footer.css">
   
@@ -30,7 +33,7 @@
         headset
       </span>
 
-      <span title="Carrinho de compras" class="material-icons">
+      <span title="Carrinho de compras" class="material-icons" onclick="showCart()">
         shopping_cart
       </span>
 
@@ -45,13 +48,13 @@
   <section id="products" class="products">
     <table>
       <tr>
-        <th class="product_image" id="product_image-feline">
+        <th colspan="2" class="product_image" id="product_image-feline">
           <img src="../public/images/productsImages/Feline.png" alt="Camiseta Feline" title="Camiseta Feline, Tamanho GG, R$50,00">
         </th>
-        <th class="product_image" id="product_image-bax">
+        <th colspan="2" class="product_image" id="product_image-bax">
           <img src="../public/images/productsImages/ba-x.png" alt="Camiseta Ba-X" title="Camiseta Ba-X, Tamanho M, R$50,00">
         </th>
-        <th class="product_image" id="product_image-enjoy">
+        <th colspan="2" class="product_image" id="product_image-enjoy">
           <img src="../public/images/productsImages/enjoy.png" alt="Camiseta Enjoy" title="Camiseta Enjoy, Tamanho G, R$50,00">
         </th>
       </tr>
@@ -59,22 +62,39 @@
         <td class="product_info" id="product_info-feline">
           Camiseta Feline
         </td>
+        <td class="add-to-cart_td">
+          <span id="add-to-cart_button" class="material-icons" onclick="addToCart(this)">
+            add_shopping_cart
+          </span>
+        </td>
+
         <td class="product_info" id="product_info-bax">
           Camiseta Ba-X
         </td>
+        <td class="add-to-cart_td">
+          <span id="add-to-cart_button" class="material-icons" onclick="addToCart(this)">
+            add_shopping_cart
+          </span>
+        </td>
+        
         <td class="product_info" id="product_info-enjoy">
           Camiseta Enjoy
+        </td>
+        <td class="add-to-cart_td">
+          <span id="add-to-cart_button" class="material-icons" onclick="addToCart(this)">
+            add_shopping_cart
+          </span>
         </td>
       </tr>
 
       <tr>
-        <th id="product_image" id="product_image-shiba">
+        <th colspan="2" id="product_image" id="product_image-shiba">
           <img src="../public/images/productsImages/shiba.png" alt="Camiseta Shiba" title="Camiseta Shiba, Tamanho GG, R$50,00">
         </th>
-        <th class="product_image" id="product_image-kyoto">
+        <th colspan="2" class="product_image" id="product_image-kyoto">
           <img src="../public/images/productsImages/kyoto.png" alt="Moletom Kyoto" title="Moletom Kyoto, Tamanho P, R$50,00">
         </th>
-        <th class="product_image" id="product_image-macintosh">
+        <th colspan="2" class="product_image" id="product_image-macintosh">
           <img src="../public/images/productsImages/macintosh.jpg" alt="Camiseta Macintosh Plus" title="Camiseta Macintosh Plus, Tamanho M, R$50,00">
         </th>
       </tr>
@@ -83,22 +103,41 @@
         <td id="product_info" id="product_info-shiba">
           Camiseta Shiba
         </td>
+        <td class="add-to-cart_td">
+          <span id="add-to-cart_button" class="material-icons" onclick="addToCart(this)">
+            add_shopping_cart
+          </span>
+        </td>
+
+
         <td class="product_info" id="product_info-kyoto">
           Moletom Kyoto
         </td>
+        <td class="add-to-cart_td">
+          <span id="add-to-cart_button" class="material-icons" onclick="addToCart(this)">
+            add_shopping_cart
+          </span>
+        </td>
+
         <td class="product_info" id="product_info-macintosh">
           Camiseta Macintosh Plus
         </td>
+        <td class="add-to-cart_td">
+          <span id="add-to-cart_button" class="material-icons" onclick="addToCart(this)">
+            add_shopping_cart
+          </span>
+        </td>
+
       </tr>
 
       <tr>
-        <th id="product_image" id="product_image-fuji">
+        <th colspan="2" id="product_image" id="product_image-fuji">
           <img src="../public/images/productsImages/mount_fuji.png" alt="Camiseta Mount Fuji" title="Camiseta Mount Fuji, Tamanho M, R$50,00">
         </th>
-        <th class="product_image" id="product_image-non">
+        <th colspan="2" class="product_image" id="product_image-non">
           <img src="../public/images/productsImages/non.png" alt="Moletom Non" title="Moletom Non, Tamanho M, R$60,00">
         </th>
-        <th class="product_image" id="product_image-sega">
+        <th colspan="2" class="product_image" id="product_image-sega">
           <img src="../public/images/productsImages/Sega.png" alt="Camiseta Sega" title="Camiseta Sega, Tamanho G, R$50,00">
         </th>
       </tr>
@@ -107,16 +146,33 @@
         <td id="product_info" id="product_info-fuji">
           Camiseta Mount Fuji
         </td>
+        <td class="add-to-cart_td">
+          <span id="add-to-cart_button" class="material-icons" onclick="addToCart(this)">
+            add_shopping_cart
+          </span>
+        </td>
+
         <td class="product_info" id="product_info-non">
           Moletom Non
         </td>
+        <td class="add-to-cart_td">
+          <span id="add-to-cart_button" class="material-icons" onclick="addToCart(this)">
+            add_shopping_cart
+          </span>
+        </td>
+
         <td class="product_info" id="product_info-sega">
           Camiseta Sega
+        </td>
+        <td class="add-to-cart_td">
+          <span id="add-to-cart_button" class="material-icons" onclick="addToCart(this)">
+            add_shopping_cart
+          </span>
         </td>
       </tr>
 
       <tr>
-        <th id="product_image" id="product_image-twilight">
+        <th colspan="2" id="product_image" id="product_image-twilight">
           <img src="../public/images/productsImages/twilight.png" alt="Camiseta Twilight" title="Camiseta Twilight, Tamanho P, R$50,00">
         </th>
       </tr>
@@ -125,6 +181,11 @@
         <td id="product_info" id="product_info-twilight">
           Camiseta Twilight
         </td> 
+        <td class="add-to-cart_td">
+          <span id="add-to-cart_button" class="material-icons" onclick="addToCart(this)">
+            add_shopping_cart
+          </span>
+        </td>
       </tr>
     </table>
         
@@ -160,8 +221,34 @@
     </div>
   </div>
 
+  <div class="disabled_cart" id="cart_container">
+    <h2>Carrinho</h2>
+
+    <span id="close_cart-button" class="material-icons" onclick="closeCart()">
+      close
+    </span>
+
+    <div id="product-list_container">
+        <ul id="product-list">
+          
+        </ul>
+    </div>
+
+    <div id="card_sub_confirm">
+      <h3 id="display_subtotal">
+        Subtotal: R$ <span id="subtotal">0.00</span>
+      </h3>
+      <a id="confirm-buy_button" href="./confirm_buy" onclick="handleBuy()">
+        <span class="material-icons">
+          check
+        </span>
+      </a>
+    </div>
+  </div>
+
   <script src="../public/js/handle_change-product-info.js"></script>
   <script src="../public/js/handle_logged_user.js"></script>
+  <script defer src="../public/js/cart.js"></script>
   <script src="../public/js/musicPlayer.js"></script>
   <script async src="../public/js/konami_code.js"></script>
 </body>

@@ -20,10 +20,10 @@ let currentPlaying = 0
 // Cada objeto contém o título da música, o artista e os caminhos da thumbnail e do arquivo de áudio
 const data = [
   {
-    title: "Soda City Funk",
-    artist: "람다람",
-    thumbnail: '../../public/images/musics_thumbnails/sodaCityFunk.png',
-    song_file: '../../public/music/sodaCityFunk.mp3'
+    title: "Samurai (Cover)",
+    artist: "Porfírio",
+    thumbnail: '../../public/images/musics_thumbnails/samurai.png',
+    song_file: '../../public/music/samurai.mp3'
   },
   {
     title: "Thank You!",

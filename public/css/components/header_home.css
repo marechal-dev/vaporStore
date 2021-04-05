@@ -6,6 +6,10 @@ header {
   padding: 4px;
 
   border-bottom: 2px solid black;
+
+  background-color: #AA00FF;
+
+  /*  #5A30F2  #8A2BE2  #E066FF #BF3EFF */
 }
 
 header img {

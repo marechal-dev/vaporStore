@@ -54,3 +54,8 @@ td {
   font-size: 22px;
   font-weight: bold;
 }
+
+#add-to-cart_button {
+  cursor: pointer;
+  text-align: center;
+}

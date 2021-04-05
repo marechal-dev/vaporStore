@@ -5,7 +5,11 @@ footer {
 
   border-top: 2px solid black;
 
+  background-color: #5A30F2;
+
   position: absolute;
+
+  color: white;
 }
 
 footer h2 {
